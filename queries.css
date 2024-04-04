@@ -1,0 +1,277 @@
+z/**********************************/
+/* Media Queries */
+/**********************************/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallerys {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .gallerys {
+    gap: 3.2rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  header {
+    padding: 0 3.2rem;
+  }
+  .navigation ul {
+    column-gap: 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .customers {
+    margin-top: 3.2rem;
+    justify-content: center;
+  }
+  .logo-img {
+    height: 2.4rem;
+  }
+  .section-how {
+    padding: 9.6rem 3.2rem;
+  }
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .testimonial-cont {
+    grid-template-columns: 1fr;
+  }
+  .gallerys {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .section-cta {
+    grid-template-columns: 3fr 2fr;
+    margin: 5rem;
+  }
+  .cta-forms {
+    grid-template-columns: 1fr;
+  }
+  .section-pricing {
+    padding: 3.2rem;
+  }
+  .cta-signup {
+    margin-top: 1.6rem;
+  }
+
+  /* MOBILE NAVIGATION  */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+  .open-nav omnifood-logo {
+    z-index: 9999;
+  }
+  .header {
+    position: relative;
+  }
+  .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  .open-nav .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translatex(0);
+  }
+  .open-nav .icon-mobile-nav[id="close"] {
+    display: block;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .open-nav .icon-mobile-nav[id="menu"] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .cta-imgs {
+    background-position: center;
+  }
+  .footer-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .logo {
+    grid-column: span 2;
+    grid-row: 1;
+    margin-bottom: 4.8rem;
+  }
+  .logos,
+  .contact {
+    grid-column: span 3;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid {
+    gap: 3.2rem;
+  }
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero {
+    padding: 3.2rem 1rem 6.4rem 0;
+  }
+  .hero {
+    margin: 0;
+    padding: 0 3.2rem;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .logo-img {
+    height: 1.2rem;
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .section-how {
+    padding: 6.4rem 3.2rem;
+  }
+  .section-how-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .section-how-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .section-how-description {
+    margin-bottom: 3.6rem;
+  }
+  .gallerys {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+  }
+  .section-testimonials {
+    padding: 6.4rem 0;
+  }
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-cta {
+    grid-template-columns: 1fr;
+    margin: 3.2rem;
+  }
+  .cta-imgs {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+}
+
+/* For Maki's phone  */
+@media (max-width: 22em) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 2.4rem 1.2rem;
+  }
+  .customer {
+    height: 3.6rem;
+    width: 3.6rem;
+    margin-left: -0.8rem;
+  }
+  .section-how-img-box {
+    align-items: start;
+    align-self: flex-start;
+  }
+
+  .complete::after {
+    right: -18%;
+  }
+}
+/* - Spacing system
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128  */
+
+/*  -Font size
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52
+         /62 / 74 / 86 // 98   */
